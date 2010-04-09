@@ -7,5 +7,7 @@ lib/rugex.rb
 script/console
 script/destroy
 script/generate
-test/test_helper.rb
-test/test_rugex.rb
+spec/rugex_spec.rb
+spec/spec.opts
+spec/spec_helper.rb
+tasks/rspec.rake
