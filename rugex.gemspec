@@ -25,6 +25,7 @@ Gem::Specification.new do |s|
     "README.rdoc",
     "Rakefile",
     "lib/rugex.rb",
+    "rugex.gemspec",
     "spec/rugex_spec.rb",
     "spec/spec_helper.rb"
   ]
