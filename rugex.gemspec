@@ -10,7 +10,7 @@ Gem::Specification.new do |s|
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Lucas Caton"]
   s.date = %q{2011-01-27}
-  s.description = %q{TODO: longer description of your gem}
+  s.description = %q{A CLI to test regular expressions on Ruby}
   s.email = %q{lucascaton@gmail.com}
   s.extra_rdoc_files = [
     "LICENSE.txt",
@@ -33,7 +33,7 @@ Gem::Specification.new do |s|
   s.licenses = ["MIT"]
   s.require_paths = ["lib"]
   s.rubygems_version = %q{1.4.1}
-  s.summary = %q{TODO: one-line summary of your gem}
+  s.summary = %q{A simple tool for testing regular expressions from Ruby using the terminal}
   s.test_files = [
     "spec/rugex_spec.rb",
     "spec/spec_helper.rb"
