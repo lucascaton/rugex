@@ -1,39 +1,39 @@
-= Rugex
+h1. About
 
 Rugex is a simple tool for testing regular expressions from Ruby using the terminal.
 
 It can be useful if you often use regular expressions or if you are learning it.
 
-== Installation
+h1. Installation
 
-  gem install rugex
+<pre><code>gem install rugex</code></pre>
 
-== Usage
+h1. Usage
 
 Open a terminal and run:
 
-  rugex [text] [regex]
+<pre><code>rugex [text] [regex]</code></pre>
 
-For example:
+h2. For example:
 
-  rugex aquarius aqua
-  => *aqua*rius
+<pre><code>rugex aquarius aqua</code></pre>
+=> *aqua* rius
 
-  rugex aquarius /aqua/
-  => *aqua*rius
+<pre><code>rugex aquarius /aqua/</code></pre>
+=> *aqua* rius
 
-  rugex aquarius ^a..a.+$
-  => *aquarius*
+<pre><code>rugex aquarius ^a..a.+$</code></pre>
+=> *aquarius*
 
-  rugex aquarius /a[qr]/
-  => *aq*u*ar*ius
+<pre><code>rugex aquarius /a[qr]/</code></pre>
+=> *aq* u *ar* ius
 
-== TODO
+h1. TODO
 
 * File Suport
 * Regex Options (i, m, x, o)
 
-== Contributing to Lucas Caton
+h1. Contributing to Lucas Caton
  
 * Check out the latest master to make sure the feature hasn't been implemented or the bug hasn't been fixed yet
 * Check out the issue tracker to make sure someone already hasn't requested it and/or contributed it
@@ -43,7 +43,6 @@ For example:
 * Make sure to add tests for it. This is important so I don't break it in a future version unintentionally.
 * Please try not to mess with the Rakefile, version, or history. If you want to have your own version, or is otherwise necessary, that is fine, but please isolate to its own commit so I can cherry-pick around it.
 
-== Copyright
+h2. Copyright
 
-Copyright (c) 2011 Lucas Caton. See LICENSE.txt for
-further details.
+Copyright (c) 2011 Lucas Caton. See LICENSE.txt for further details.
