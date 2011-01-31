@@ -5,11 +5,11 @@
 
 require 'rubygems'
 require 'thor'
-require 'lib/rugex/string'
+require 'rugex/string'
 
 module Rugex
   class Base < Thor
-    ARGV.insert(0, 'string') if (ARGV[0] =~ /-./) == nil
+    ARGV.unshift 'string' if (ARGV[0] =~ /-./) == nil
 
     desc '<text> <regex>', 'show the match text using regular expression'
     def string(text, regex_string)

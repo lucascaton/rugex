@@ -1,5 +1,5 @@
-require 'lib/rugex/print'
-require 'lib/rugex/regex'
+require 'rugex/print'
+require 'rugex/regex'
 
 class EmptyRegexError < Exception; end
 
