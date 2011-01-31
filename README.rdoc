@@ -1,6 +1,39 @@
 = rugex
 
-Description goes here.
+Rugex is a simple tool for testing regular expressions from Ruby using the terminal.
+
+It can be useful if you often use regular expressions or if you are learning it.
+
+== Installation
+
+<pre><code>gem install rugex</code></pre>
+
+== Usage
+
+Open a terminal and run:
+
+<pre><code>rugex [text] [regex]</code></pre>
+
+For example:
+
+<pre><code>
+rugex aquarius aqua
+=> *aqua*rius
+
+rugex aquarius /aqua/
+=> *aqua*rius
+
+rugex aquarius ^a..a.+$
+=> *aquarius*
+
+rugex aquarius /a[qr]/
+=> *aq*u*ar*ius
+</code></pre>
+
+== TODO
+
+* File Suport
+* Regex Options (i, m, x, o)
 
 == Contributing to Lucas Caton
  
