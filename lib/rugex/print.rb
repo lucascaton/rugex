@@ -4,10 +4,10 @@ module Rugex
     private
     def print_colored_text
       colors = {
-        :black => "\033[m",
-        :blue  => "\033[44m"
+        :white => "\033[0;37m",
+        :red   => "\033[0;31m"
       }
-      @text.gsub(@regex,"#{colors[:blue]}\\&#{colors[:black]}")
+      @text.gsub(@regex,"#{colors[:red]}\\&#{colors[:white]}")
     end
   end
 end
