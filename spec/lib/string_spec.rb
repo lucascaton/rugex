@@ -5,12 +5,12 @@ describe 'Rugex::String' do
     context 'successful' do
       it 'checks text with regular expression' do
         output = Rugex::String.new('John Doe', 'ohn')
-        output.to_s.should == "J\e[44mohn\e[m Doe"
+        output.to_s.should == "J\e[0;31mohn\e[0;37m Doe"
       end
 
       it 'checks text with other regular expression' do
         output = Rugex::String.new('John Doe', 'John D')
-        output.to_s.should == "\e[44mJohn D\e[moe"
+        output.to_s.should == "\e[0;31mJohn D\e[0;37moe"
       end
     end
 
