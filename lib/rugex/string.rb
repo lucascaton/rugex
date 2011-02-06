@@ -1,7 +1,11 @@
 require 'rugex/print'
 require 'rugex/regex'
 
-class EmptyRegexError < Exception; end
+class EmptyRegexError < Exception
+  def initialize
+    super 'The regex param should not be blank.'
+  end
+end
 
 module Rugex
   class String
