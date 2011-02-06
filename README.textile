@@ -22,8 +22,8 @@ h2. For example:
 <pre><code>rugex aquarius /aqua/</code></pre>
 => *aqua* rius
 
-<pre><code>rugex aquarius ^a..a.+$</code></pre>
-=> *aquarius*
+<pre><code>rugex aquarius ^a.+u</code></pre>
+=> *aquariu* s
 
 <pre><code>rugex aquarius /a[qr]/</code></pre>
 => *aq* u *ar* ius
