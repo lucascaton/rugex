@@ -33,6 +33,7 @@ h1. TODO
 * File Suport
 * Regex Options (i, m, x, o)
 * It does not work in Windows OS.
+* Show matches groups separately
 
 h1. Contributing to Lucas Caton
  
