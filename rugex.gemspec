@@ -5,18 +5,18 @@
 
 Gem::Specification.new do |s|
   s.name = %q{rugex}
-  s.version = "0.1.2"
+  s.version = "0.1.3"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Lucas Caton"]
-  s.date = %q{2011-01-31}
+  s.date = %q{2011-02-06}
   s.default_executable = %q{rugex}
   s.description = %q{A CLI to test regular expressions on Ruby}
   s.email = %q{lucascaton@gmail.com}
   s.executables = ["rugex"]
   s.extra_rdoc_files = [
     "LICENSE.txt",
-    "README.rdoc"
+    "README.textile"
   ]
   s.files = [
     ".document",
@@ -24,18 +24,16 @@ Gem::Specification.new do |s|
     "Gemfile",
     "Gemfile.lock",
     "LICENSE.txt",
-    "README.rdoc",
+    "README.textile",
     "Rakefile",
     "VERSION",
     "bin/rugex",
-    "lib/rugex.rb",
     "lib/rugex/print.rb",
     "lib/rugex/regex.rb",
     "lib/rugex/string.rb",
     "rugex.gemspec",
     "spec/lib/regex_spec.rb",
     "spec/lib/string_spec.rb",
-    "spec/rugex_spec.rb",
     "spec/spec_helper.rb"
   ]
   s.homepage = %q{https://github.com/lucascaton/rugex}
@@ -46,7 +44,6 @@ Gem::Specification.new do |s|
   s.test_files = [
     "spec/lib/regex_spec.rb",
     "spec/lib/string_spec.rb",
-    "spec/rugex_spec.rb",
     "spec/spec_helper.rb"
   ]
 
@@ -54,18 +51,15 @@ Gem::Specification.new do |s|
     s.specification_version = 3
 
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
-      s.add_runtime_dependency(%q<thor>, [">= 0.14.6"])
       s.add_development_dependency(%q<rspec>, ["~> 2.3.0"])
       s.add_development_dependency(%q<bundler>, ["~> 1.0.9"])
       s.add_development_dependency(%q<jeweler>, ["~> 1.5.2"])
     else
-      s.add_dependency(%q<thor>, [">= 0.14.6"])
       s.add_dependency(%q<rspec>, ["~> 2.3.0"])
       s.add_dependency(%q<bundler>, ["~> 1.0.9"])
       s.add_dependency(%q<jeweler>, ["~> 1.5.2"])
     end
   else
-    s.add_dependency(%q<thor>, [">= 0.14.6"])
     s.add_dependency(%q<rspec>, ["~> 2.3.0"])
     s.add_dependency(%q<bundler>, ["~> 1.0.9"])
     s.add_dependency(%q<jeweler>, ["~> 1.5.2"])
