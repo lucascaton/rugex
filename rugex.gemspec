@@ -5,7 +5,7 @@
 
 Gem::Specification.new do |s|
   s.name = %q{rugex}
-  s.version = "0.1.4"
+  s.version = "0.1.5"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Lucas Caton"]
@@ -29,10 +29,8 @@ Gem::Specification.new do |s|
     "VERSION",
     "bin/rugex",
     "lib/rugex/print.rb",
-    "lib/rugex/regex.rb",
     "lib/rugex/string.rb",
     "rugex.gemspec",
-    "spec/lib/regex_spec.rb",
     "spec/lib/string_spec.rb",
     "spec/spec_helper.rb"
   ]
@@ -42,7 +40,6 @@ Gem::Specification.new do |s|
   s.rubygems_version = %q{1.4.1}
   s.summary = %q{A simple tool for testing regular expressions from Ruby using the terminal}
   s.test_files = [
-    "spec/lib/regex_spec.rb",
     "spec/lib/string_spec.rb",
     "spec/spec_helper.rb"
   ]
