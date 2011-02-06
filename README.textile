@@ -1,6 +1,6 @@
 h1. About
 
-Rugex is a simple tool for testing regular expressions from Ruby using the terminal.
+Rugex is a simple tool for testing Ruby Regular Expressions using the terminal.
 
 It can be useful if you often use regular expressions or if you are learning it.
 
