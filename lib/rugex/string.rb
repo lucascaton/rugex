@@ -1,5 +1,4 @@
 require 'rugex/print'
-require 'rugex/regex'
 
 class EmptyRegexError < Exception
   def initialize
