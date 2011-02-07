@@ -7,8 +7,9 @@ $LOAD_PATH.unshift File.join(File.dirname(__FILE__), '..', 'lib')
 
 require 'optparse'
 require 'rugex/string'
+require 'rugex/file'
 
-options = {}
+options = {:file => false}
 
 optparse = OptionParser.new do |opts|
   opts.banner = "Usage:\n\nrugex <text> <regex>\n\nYou can use flags as such:"
@@ -16,6 +17,10 @@ optparse = OptionParser.new do |opts|
   opts.on('-h', '--help', 'Display this screen') do
     puts opts
     exit
+  end
+
+  opts.on('-f', '--file', 'Receives a file as input') do
+    options[:file] = true
   end
 
   if ARGV.size < 2
@@ -31,6 +36,8 @@ rescue OptionParser::InvalidOption => e
   exit
 end
 
-text = ARGV[0]
-regex_string = ARGV[1]
-puts Rugex::String.new text, regex_string
+if options[:file] == true
+  puts Rugex::File.new ARGV[0], ARGV[1]
+else
+  puts Rugex::String.new ARGV[0], ARGV[1]
+end

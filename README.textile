@@ -28,9 +28,12 @@ h2. For example:
 <pre><code>rugex aquarius 'a[qr]'</code></pre>
 => *aq* u *ar* ius
 
+h2. Using files:
+
+<pre><code>rugex -f [file path] [regex]</code></pre>
+
 h1. TODO
 
-* File Suport
 * Regex Options (i, m, x, o)
 * It does not work in Windows OS.
 * Show matches groups separately
